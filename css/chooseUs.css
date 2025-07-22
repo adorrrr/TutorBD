@@ -1,0 +1,128 @@
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+/* Why Choose Us Section */
+.why-choose-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 60px;
+  background: #f5fbf8;
+  align-items: center;
+}
+.why-left {
+  flex: 1 1 480px;
+}
+.section-tag {
+  display: inline-block;
+  background: #d2f1e4;
+  color: #007f5f;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.why-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.video-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.video-container img {
+  width: 100%;
+  display: block;
+}
+.tutor-stats {
+  position: absolute;
+
+  left: 20px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatars img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+.why-right {
+  flex: 1 1 480px;
+}
+.why-text {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+  max-width: 480px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  flex: 1 1 240px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card-icon {
+  font-size: 2rem;
+  color: #007f5f;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+.card a {
+  font-weight: bold;
+  color: #f9a825;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .why-choose-us {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
